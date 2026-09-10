@@ -4,4 +4,6 @@
 4. Premere Y o S (Yes/Si)
 5. Aggiungere al PATH di sistema
 6. Andare sulla barra di ricerca windows e cercare 'Modifica Variabili d'ambiente'
-7. Andare su Avanzate>Variabili d'ambiente>Variabili di Sistema>Path e cliccare su nuova e incollando: C:\msys64\ucrt64
+7. Andare su Avanzate>Variabili d'ambiente>Variabili di Sistema>Path e cliccare su nuova e incollando: C:\msys64\ucrt64 (serve per far vedere gcc g++ e gdb anche se non siamo nella cartella con l'eseguibile di gcc ad esempio)
+8. Installare estensione di C/C++ su vscode
+9. Buon Lavoro!
