@@ -1,0 +1,7 @@
+1. Scaricare il compilatore dal sito presente in 'website.txt'
+2. Installare il programma MSYS2
+3. Aprire console MSYS2 e digitare il commando presente in 'command.txt'
+4. Premere Y o S (Yes/Si)
+5. Aggiungere al PATH di sistema
+6. Andare sulla barra di ricerca windows e cercare 'Modifica Variabili d'ambiente'
+7. Andare su Avanzate>Variabili d'ambiente>Variabili di Sistema>Path e cliccare su nuova e incollando: C:\msys64\ucrt64
