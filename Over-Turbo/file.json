@@ -1,0 +1,27 @@
+[out:json][timeout:60];
+
+// 1. Trova l'area amministrativa di Putignano
+area[name="Putignano"]->.searchArea;
+
+// 2. Estrae un set completo per il game design (Strade, Edifici, Terreni, Acqua, Natura)
+(
+  // Infrastrutture e mobilità
+  way["highway"](area.searchArea);
+  
+  // Architettura e strutture (inclusi i multipoligoni/relazioni)
+  way["building"](area.searchArea);
+  relation["building"](area.searchArea);
+  
+  // Conformazione del suolo e vegetazione (campagne pugliesi, uliveti, boschi)
+  way["landuse"](area.searchArea);
+  way["natural"](area.searchArea);
+  
+  // Reticolo idrografico (fiumi, canali, corsi d'acqua)
+  way["waterway"](area.searchArea);
+  relation["waterway"](area.searchArea);
+);
+
+// 3. Restituisce il corpo completo con tutti i tag e i nodi geometrici associati
+out body;
+>;
+out skel qt;
